@@ -8,7 +8,7 @@ public class Solution {
         String[] words = sentence.split("");
         int wordCount = 1;
 
-        String uniqueWords = null;
+
         for (int i = 0; i < words.length; i++) {
 
             for (int j = i + 1; j < words.length; j++) {
@@ -19,12 +19,12 @@ public class Solution {
 
                 if (words[i] != "0")
 
-                    uniqueWords = (words[i] + "seen" + wordCount);
+                    sentence = (words[i] + "seen" + wordCount);
                 wordCount = 1;
             }
 
         }
-        return uniqueWords;
+        return sentence;
     }
 
 }
